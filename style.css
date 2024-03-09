@@ -1,0 +1,79 @@
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-image: url(cloud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* Moved from media query to apply to all screen sizes */
+  }
+  
+  #App {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(19, 16, 16, 0.623);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(231, 231, 231, 0.432);
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #0b85ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  
+  .weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 80px;
+    
+  }
+  @keyframes star-fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.star {
+    position: fixed;
+    top: -50px;
+    left: calc(10% + (80% * random())); /* Randomize horizontal position */
+    animation: star-fall linear infinite;
+    animation-duration: 5s; /* Duration of animation */
+}
+
+  
+  @media screen and (max-width: 480px) {
+    /* No changes for smaller screens */
+  }
+  
+}
